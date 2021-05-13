@@ -1,0 +1,22 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+ul li {
+    background-color: orchid;
+    line-height: 40px
+}
+.peul {
+    background-color: palegreen;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+body {
+    font-size: 16px;
+}
