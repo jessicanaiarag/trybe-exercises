@@ -1,0 +1,48 @@
+div:hover {
+  border: darkturquoise 5px solid;
+}
+
+#primeira {
+    background-color: yellow;
+}
+
+#primeira h3 {
+    color: green;
+}
+
+#segunda {
+    background-color: brown;
+}
+
+#segunda h3 {
+    color: white;
+}
+
+#terceira {
+    background-color: coral;
+    height: 50px;
+}
+
+#terceira h3 {
+    font-weight: bold;
+}
+
+#quarta {
+    background-color: grey;
+}
+
+#quarta h3 {
+    font-style: oblique;
+}
+
+#quinta {
+    background-color: aqua;
+}
+
+#quinta h3 {
+    color: green;
+}
+
+div:nth-child(odd) {
+    font-style: italic;
+}
