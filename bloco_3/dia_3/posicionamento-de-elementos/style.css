@@ -1,0 +1,33 @@
+img {
+    height: 180px;
+}
+
+.super-mario {
+    position: absolute;
+    right: 400px;
+}
+
+.goomba {
+    position: absolute;
+    right: 350px;
+    top: 233px;
+}
+
+.word {
+    right: 163px;
+    position: absolute;
+    z-index: 2;
+    top: 63px;
+}
+
+.baloon {
+    right: 147px;
+    position: absolute;
+    height: 119px;
+    top: 38px;
+}
+
+.bowser {
+    position: absolute;
+    right: 10px;
+}
