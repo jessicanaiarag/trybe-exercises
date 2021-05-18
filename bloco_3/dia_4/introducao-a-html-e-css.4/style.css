@@ -5,6 +5,11 @@ body {
     margin-right: auto;
 }
 
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
 img {
     width: 500px;
     height: auto;
@@ -29,4 +34,12 @@ iframe {
 
 .center {
     text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
+p {
+    text-align: justify;
 }
