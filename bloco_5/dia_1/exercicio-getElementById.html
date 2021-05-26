@@ -2,17 +2,20 @@
 <html>
   <body>
     <h2 id="page-title">Título</h2>
-    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <p class="p" id="paragraph">Dê uma cor para este parágrafo!</p>
     <h4 id="subtitle">Subtítulo</h4>
-    <p id="second-paragraph">Segundo parágrafo!</p>
+    <p class="p" id="second-paragraph">Segundo parágrafo!</p>
 
     <script>
+      document.getElementsByClassName('p')[0].style = 'background-color: blanchedalmond';
       document.getElementById("page-title").innerText = "A Família Buscapé";
       document.getElementById("second-paragraph").innerText =
         "Jed Clampett (Jim Varney) é um homem simples do campo e encontra petróleo em sua propriedade, ficando milionário da noite para o dia. Ele decide se mudar com sua família para a região dos ricos e famosos da Califórnia, Berverly Hills. O grupo tenta se adaptar a nova vida que está cheia de oportunistas, incluindo o inescrupuloso banqueiro e seus empregados que só querem roubar o dinheiro da família.";
-      document.getElementById("subtitle").innerText = "É um ótimo filme para ver com a familia"
+      document.getElementById("subtitle").innerText =
+        "É um ótimo filme para ver com a familia";
       const paragraph = document.getElementById("paragraph");
       paragraph.style.color = "red";
+      document.getElementsByTagName('h4')[0].style = 'color: blue';
     </script>
   </body>
 </html>
