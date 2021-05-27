@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
+        <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    //1
+    let ondeVoceEsta = document.getElementById("elementoOndeVoceEsta"); 
+    console.log(ondeVoceEsta); 
+    //2
+    let pai = ondeVoceEsta.parentElement;
+    pai.style = 'color: red';
+    console.log(pai);
+    //3 
+    let primeiroFilhoFilho = document.getElementById("primeiroFilhoDoFilho");
+    primeiroFilhoFilho.innerText = "Murilo"; 
+    console.log(primeiroFilhoFilho);
+    //4 
+    let primeiroFilho = document.getElementById("pai").firstElementChild;  
+    console.log(primeiroFilho);
+    //5
+    console.log(ondeVoceEsta.previousElementSibling);
+    //6
+    let atencao = ondeVoceEsta.nextSibling;
+    console.log(atencao); 
+    //7
+    console.log(ondeVoceEsta.nextElementSibling);
+    //8
+    console.log(pai.children[2]);
+
+   </script>
+</body>
+</html>
