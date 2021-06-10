@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Criando um formulário de currículo</title>
+  </head>
+  <body>
+    <h1>Formulário de currículo</h1>
+    <form action="" method="get">
+      <fieldset class="dados-pessoais">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" maxlength="40" required />
+        <br />
+        <label for="e-mail">Email</label>
+        <input type="email" name="e-mail" id="e-mail" maxlength="50" required />
+        <br />
+        <label for="cpf">CPF</label>
+        <input type="number" name="cpf" id="cpf" maxlength="11" required />
+        <br />
+        <label for="endereco">Endereço</label>
+        <input
+          type="text"
+          name="endereco"
+          id="endereco"
+          maxlength="200"
+          required
+        />
+        <br />
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" maxlength="28" required />
+        <br />
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado" required></select>
+        <br />
+        <input type="radio" name="moradia" id="casa" value="casa" required />
+        <label for="casa">Casa</label>
+        <input
+          type="radio"
+          name="moradia"
+          id="apartamento"
+          value="apartamento"
+          required
+        />
+        <label for="apartamento">Apartamento</label>
+      </fieldset>
+      <fieldset>
+        <label for="Resumo-currículo">Resumo do currículo</label>
+        <br />
+        <textarea
+          name="Resumo-currículo"
+          id="Resumo-currículo"
+          cols="30"
+          rows="10"
+          maxlength="1000"
+          required
+        ></textarea>
+        <br />
+        <label for="cargo">Cargo</label>
+        <input
+          type="password"
+          name="cargo"
+          id="cargo"
+          maxlength="40"
+          required
+        />
+        <br />
+        <label for="Descrição-cargo">Descrição do cargo</label>
+        <br />
+        <textarea
+          name="Descrição-cargo"
+          id=""
+          cols="30"
+          rows="10"
+          maxlength="500"
+          required
+        ></textarea>
+        <br />
+        <label for="data">Data de Inicio</label>
+        <input type="date" name="data" id="data" required />
+      </fieldset>
+      <div>
+        <button>Limpar</button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
