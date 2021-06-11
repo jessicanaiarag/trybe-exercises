@@ -1,0 +1,18 @@
+div {
+    padding: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    margin-right: 80px;
+    margin: auto;
+    padding: 30px;
+}
+
+.form-control {
+    width: 100%;
+   
+}

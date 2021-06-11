@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="node_modules/popup-validation/bin/validation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Criando um formulário de currículo.</title>
+  </head>
+  <body>
+    <h1>Formulário de currículo</h1>
+    <form action="" method="get">
+    <fieldset>
+      <div class="input-group mb-3">
+        <label for="nome" class="form-control"
+          >Nome
+          <input
+            type="text" class="form-control" 
+            name="nome"
+            id="nome"
+            placeholder="Digite seu nome"
+            required
+            maxlength="40"
+          />
+        </label>
+      </div>
+      <div class="input-group mb-3">
+        <label for="email" class="form-control">Email</label>
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username"  required maxlength="50" aria-describedby="addon-wrapping">
+      </div>
+      <div class="input-group mb-3">
+        <label for="cpf" class="form-control"
+          >CPF
+          <input data-validate="required" type="number" name="cpf" id="cpf" required maxlength="11" />
+        </label>
+      </div>
+      <div class="input-group mb-3">
+        <label for="endereco" class="form-control"
+          >Endereço
+          <input
+            type="text"
+            name="endereco"
+            id="endereco"
+            required
+            maxlength="200"
+            data-validate="required"
+          />
+        </label>
+        <label for="cidade" class="form-control"
+          >Cidade
+          <input
+            type="text"
+            name="cidade"
+            id="cidade"
+            required
+            maxlength="28"
+          />
+        </label>
+        <label for="estado"class="form-control"
+          >Estado
+          <select name="estado" id="estado" required></select>
+        </label>
+      </div>
+      <div class="form-control" class="form-control">
+        <label for="casa"
+          >Casa
+          <input type="radio" name="moradia" id="casa" />
+        </label>
+        <label for="apartamento"
+          >Apartamento
+          <input type="radio" name="moradia" id="apartamento" />
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <label for="resumo-curriculo"
+          >Resumo do currículo</label>
+          <br>
+          <textarea
+            name="resumo-curriculo"
+            id="resumo-curriculo"
+            cols="30"
+            rows="10"
+            maxlength="1000"
+            required
+          ></textarea>
+      </div>
+      <div>
+      <label for="cargo"
+        >Cargo
+        <input type="text" name="cargo" id="cargo" required maxlength="40" />
+      </label>
+    </div>
+    <div>
+      <label for="descricao-cargo"
+        >Descrição do cargo</textarea>
+        <br>
+        <textarea
+          name="descricao-cargo"
+          id="descricao-cargo"
+          cols="30"
+          rows="10"
+          required
+          maxlength="500"
+        ></textarea>
+      </label>
+    </div>
+    <div>
+      <label for="data"
+        >Data de Início
+        <input type="text" name="data" id="data">
+      </label>
+    </div>
+    </fieldset>
+    </form>
+    <button>limpar</button>
+    <button id="enviar">Enviar</button>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="node_modules/popup-validation/bin/validation.min.js"></script> 
+    <script src="script.js"></script>
+  </body>
+</html>
