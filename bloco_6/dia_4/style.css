@@ -12,23 +12,28 @@
   .header-container {
     background-color: #5C687C;
     display: flex;
+    
   }
   
   .logo-container {
     display: flex;
     justify-content: center;
     flex-basis: 268px;
+    order: -1;
   }
   
   .menu-container {
     display: flex;
     flex-basis: 500px;
+    flex-grow: 1;
+    align-self: center;
   }
   
   .menu-container ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    
   }
   
   .menu-container li {
@@ -36,6 +41,6 @@
     font-weight: 500;
     font-size: 1.3rem;
     list-style: none;
-    margin-right: 10px;
+    margin-right: 10px;;
   }
 
