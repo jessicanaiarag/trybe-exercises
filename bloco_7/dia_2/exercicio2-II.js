@@ -17,7 +17,7 @@ const lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
-  //1 - Crie uma função para adicionar o turno da manhã na lesson2. Essa 
+  //1-Crie uma função para adicionar o turno da manhã na lesson2. Essa 
   //função deve possuir três parâmetros, sendo eles: o objeto a ser modificado,
   //a chave que deverá ser adicionada e o valor dela.
 
@@ -26,3 +26,22 @@ const lesson1 = {
   };
   addTurno(lesson2, 'turno', 'manhã');
   console.log(lesson2);
+
+  //2-Crie uma função para listar as keys de um objeto. Essa função deve receber 
+  //um objeto como parâmetro.
+
+  const listaKeys = (objeto) => {
+    return Object.keys(objeto);
+  };
+  console.log(listaKeys(lesson3));
+
+  //3-Crie uma função para mostrar o tamanho de um objeto.
+  const tamanho = (objeto) => {
+   return Object.keys(objeto).length;
+  };
+  console.log(tamanho(lesson2));
+
+  //4-Crie uma função para listar os valores de um objeto. Essa função deve receber
+  // um objeto como parâmetro.
+  const valores = (objeto) => Object.values(objeto);
+  console.log(valores(lesson3));
