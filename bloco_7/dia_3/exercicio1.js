@@ -14,7 +14,7 @@ assert.strictEqual(typeof sum, 'function');
 assert.strictEqual(sum(4,5),9);
 
 assert.strictEqual(sum(0,0),0);
-
+assert.strictEqual(0,0);
 
 assert.throws (() => {
     sum(4,'5');
