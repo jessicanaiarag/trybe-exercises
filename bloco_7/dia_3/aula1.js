@@ -21,5 +21,5 @@ assert.strictEqual(typeof(summationof), 'function');
 
 assert.throws(() => {
     summationof(1);
-
-} ' Os cassos deveriam falhar.');
+    'Os cassos deveriam falhar.'
+});
