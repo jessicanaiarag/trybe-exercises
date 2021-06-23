@@ -1,13 +1,17 @@
 
-const msg = (wakeUp) => 'Acordando!!';
+const msg = () => 'Acordando!!';
 
-const coof = (café) => 'Bora tomar café!!';
+const coof = () => 'Bora tomar café!!';
 
-const sleep = (dormi) => 'Partiu dormir!!';
+const sleep = () => 'Partiu dormir!!';
 
-const doingThings = (func) => ('');
+const doingThings = (func) => func();
 
 console.log(doingThings(msg));
+console.log(doingThings(coof));
+console.log(doingThings(sleep));
+
+
 
 // Ao chamar a função doingThings:
 //doingThings(wakeUp);
