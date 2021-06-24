@@ -11,11 +11,6 @@ const confereResultado = (aposta, numeroSorteado) => {
 console.log(resultadoSorteio(3, confereResultado));
 
 
-
-
-
-
-
 /*
 2 - Desenvolva uma HOF que retorna o resultado de um sorteio. Esta HOF irá gerar 
 um número aleatório entre 1 e 5 recebendo como parâmetros o número apostado e uma 
