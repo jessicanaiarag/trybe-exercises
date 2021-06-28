@@ -68,6 +68,13 @@ const expectedResult = 43;
 
 function averageAge() {
   // escreva seu código aqui
+  const idades = books.reduce((acc, curr) => {
+    const idade = curr.releaseYear - curr.author.birthYear;
+    acc += idade;
+    return acc;
+  },0)
+  const mediaIdade = idades / books.length;
+  return mediaIdade;
 }
 
 assert.strictEqual(averageAge(), expectedResult);
