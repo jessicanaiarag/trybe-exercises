@@ -5,6 +5,17 @@ const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
 
 function studentAverage() {
   // escreva seu código aqui
+  const medias = grades.reduce((acc, curr) => {
+    const total = curr.reduce((total, nota) => total += nota, 0)
+    const media = total / curr.length;
+    acc.push(media);
+    return acc;
+  } ,[])
+  const notas = students.map((student, index) => {
+    const obj = {name: student, average: medias[index]}
+    return obj;
+  })
+  return notas;
 }
 
 const expected = [
