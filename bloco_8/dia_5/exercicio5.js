@@ -4,6 +4,8 @@ const myList = [1, 2, 3];
 
 // escreva swap abaixo
 
+const swap = ([e1, e2, e3]) => [e3, e2, e1];
+
 const swappedList = swap(myList);
 
 assert.strictEqual(swappedList[0], 3);
