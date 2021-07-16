@@ -1,0 +1,12 @@
+{
+  "name": "dia_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercicios.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
