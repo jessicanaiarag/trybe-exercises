@@ -8,17 +8,31 @@ class App extends Component {
 
     this.state = {
       listTodo: [],
+      itemSelecionado: null,
     };
 
     this.addTodo = this.addTodo.bind(this);
+    this.selecionaItem = this.selecionaItem.bind(this);
+    this.removeItemSelecionado = this.removeItemSelecionado.bind(this);
   }
 
   addTodo(todo) {
     this.setState((state) => ({ listTodo: [...state.listTodo, todo] }));
   }
 
+  selecionaItem(itenIndex) {
+    this.setState({ itemSelecionado: itenIndex })
+  }
+
+  removeItemSelecionado() {
+    const { listTodo, itemSelecionado } = this.state;
+    const copyListTodo = [...listTodo];
+    copyListTodo.splice(itemSelecionado, 1);
+    this.setState({ listTodo: copyListTodo, itemSelecionado: null });
+  }
+
   render() {
-    const { listTodo } = this.state;
+    const { listTodo, itemSelecionado } = this.state;
     return (
       <div className="App">
         <InputTodo addTodo={(todo) => this.addTodo(todo)} />
@@ -26,13 +40,23 @@ class App extends Component {
           <ul>
             {
               listTodo.map((todo, index) => (
-                <li key={index + 1}>
+                <li key={index + 1}
+                  style={{
+                    color: index === itemSelecionado ? 'red' : 'blue',
+                    cursor: 'pointer'
+                  }}
+                  onClick={() => this.selecionaItem(index)}>
                   <Item content={todo} />
                 </li>
               ))
             }
           </ul>
         }
+        <input id="remove" type="button"
+          value="Remover" data-testid="id-remove"
+          disabled={itemSelecionado != null ? false : true} 
+          onClick={this.removeItemSelecionado}
+          />
       </div>
     );
   }
