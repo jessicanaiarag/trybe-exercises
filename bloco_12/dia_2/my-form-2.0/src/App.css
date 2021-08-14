@@ -1,0 +1,19 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+};
+
+textarea {
+  margin: 10px;
+};
+
+#root {
+  display: flex;
+  justify-content: center;
+};
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+};
