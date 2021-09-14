@@ -3,9 +3,22 @@ import React, { useEffect, useState } from "react";
 export const AuthContext = React.createContext({});
 
 export const AuthProvider = (props) => {
+
+    constructor(){
+        super()
+        state: {
+            name: "Henrique",
+        }
+    }
+    setState()
+
     const [user, setUser] = useState({
         name: "Henrique",
     });
+
+    console.log(user)
+    setUser({name: 'jessica'})
+    console.log(user)
 
     useEffect(() => {
         const userStorage = localStorage.getItem('user');
