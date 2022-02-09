@@ -1,0 +1,13 @@
+module.exports = ( sequelize, DataTypes) => {
+    const Plans = sequelize.define('Plans', {
+        coverage: DataTypes.STRING,
+        price: DataTypes.DOUBLE,
+    },
+    {
+        timestamps: false,
+    });
+    Plans.associate = (models) => {
+        Plans.hasMany(models.Patients, { foreignKey: 'plan_id', as: 'patients'});
+    };
+    return Plans;
+};
